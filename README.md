@@ -1,5 +1,1 @@
-# Kohana PHP Framework, version 3.2 (development)
-
-This is the current development version of [Kohana](http://kohanaframework.org/).
-
-For the most current release, see the 3.1/master branch.
+# This is my completed project. Project slot_automat realized by idea slot-automats in real life, which you can see in casino
