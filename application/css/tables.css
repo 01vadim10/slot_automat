@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.datatable {
+	border: 10px solid #338BA6;
+}
+.datatable td, .datatable th {
+border: 1px solid #73C0D4;
+}

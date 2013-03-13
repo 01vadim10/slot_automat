@@ -24,7 +24,7 @@ return array
 			'password'   => FALSE,
 			'persistent' => FALSE,
 		),
-		'table_prefix' => '',
+		'table_prefix' => 'slt_',
 		'charset'      => 'utf8',
 		'caching'      => FALSE,
 		'profiling'    => TRUE,

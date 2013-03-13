@@ -1,0 +1,16 @@
+php_value register_globals off
+php_value magic_quotes_gpc on
+
+# Главная страница в директории
+DirectoryIndex index.php
+
+# Кодировка документов по умолчанию 
+php_value default_charset utf-8
+
+
+# Сообщения сервера о ошибках в PHP-коде
+php_value error_reporting on
+php_flag display_errors on
+
+
+

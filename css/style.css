@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+body {
+	padding:0;
+	margin:0;
+}
+#header h1{
+	margin: 0;
+}
+#header{
+ 	background: #CCCCCC;
+ 	padding: 20px;
+}
+#header table, #header td, #header th {
+		border: none;
+}
+table {
+	border: 10px solid #338BA6;
+	width: 100%;
+}
+td, th {
+	text-align: center;
+	border: 1px solid #73C0D4;
+}
+textarea {
+	width: 80%;
+}
+#messages
+{
+border-style:solid;
+border-color:red;
+}

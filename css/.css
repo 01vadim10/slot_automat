@@ -1,0 +1,9 @@
+h1{font-style:italic};
+h1 em{font-style:normal}
+b{font-style:oblique}
+h4{font-variant:small-caps}
+em{font-style:oblique}
+h5{font-weight:900}
+body{background:lightsteelblue url(17.JPG) repeat-y fixed center}
+p{font: oblique 700 14pt/16pt "Times Cyr",serif;color:black; background-image:none;
+ letter-spacing:3em; text-transform:capitalize; text-decoration:line-through; text-align:center}

@@ -1,28 +1,25 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Admin Room</title>
-</head>
-<body>
-<form action = '../classes/controller/member.php' method = "post">
-<table border width = 100%>
-<tr>
-Список модераторов:
-<?php foreach ($data as $a) {?><br>
+<form action = <?=URL::site('/member/delete')?> method = "post">
+<table >
+	<tr align="left"><a href=<?=URL::site('member/register')?>><h4>Регистрация нового пользователя</h4></a></tr>
 	<tr>
-	<td align = center>
-	<input type = "checkbox" name = "id_del[]" value = "<?=$a['id']?>">
-	<td align = "center"><?=$a['id']?>
-	<td align = "center">
-	<input type="text" name="moder_name[<?=$a['id']?>]" value="<?=$a['username']?>">
-	<td align = "center"><?=$a['email']?>
-	<?}?>
+		<h3>Список модераторов:</h3>
+	</tr>
+	<tr>
+		<td></td>
+		<th>ID-пользователя</th>
+		<th>Логин</th>
+		<th>Почта(Email)</th>
+	</tr>
+	<?php foreach ($data as $a) {?><br>
+		<tr>
+		<td align = center><input type = "checkbox" name = "id_del[]" value = "<?=HTML::chars($a['id'])?>"></td>
+		<td align = "center"><?=HTML::chars($a['id'])?></td>
+		<td align = "center"><a href="<?=HTML::chars(URL::site('member/edit/'.$a['id']))?>"><?=HTML::chars($a['username'])?></a></td>
+		<td align = "center"><?=HTML::chars($a['email'])?></td>
+		</tr>
+		<?}?>
 </table>
 <br>
-<input type = 'submit' name = 'save' value = 'Save'>
+<br>
 <input type = "submit" name = "delete" value = "Удалить отмеченные" onclick="return confirm('Удалить?')">
 </form>
-<?echo '<br /><a href=\'logout\'>logout</a>'?>
-<?echo '<br /><a href=\'register\'>Зарегестрировать нового пользователя.</a>'?>
-</body>
-</html>
